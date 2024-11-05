@@ -1,4 +1,4 @@
-package com.auroratracker.backend.services;
+package com.auroratracker.backend.services.weatherfactors;
 
 import com.auroratracker.backend.models.space.weatherfactors.KPIndex;
 import com.fasterxml.jackson.databind.JsonNode;

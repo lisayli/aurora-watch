@@ -124,7 +124,6 @@ encoding.xml
 
 # Undvik att inkludera andra eventuella `.xml`-filer i `.idea`-mappen
 .idea/*.xml
-*.iml
 .idea/*.xml   # Inkluderar compiler.xml, encodings.xml, workspace.xml, m.fl.
 
 # Behåll endast projektövergripande inställningar som är viktiga för alla utvecklare

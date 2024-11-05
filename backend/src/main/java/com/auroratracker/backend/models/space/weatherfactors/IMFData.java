@@ -17,6 +17,6 @@ public class IMFData {
 
     @Override
     public String toString() {
-        return "ImfData: " + bt + ",\n bz:" + bz;
+        return "ImfData { " + "<br>" + "Bt: " +  bt + "<br>" + "bz: " + bz + "<br>" + "}";
     }
 }
