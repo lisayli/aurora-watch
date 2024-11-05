@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/aurora")
-public class SpaceWeatherController {
+@RequestMapping("/api/aurora/kp")
+public class KPIndexController {
 
     private final KPIndexService kpIndexService;
 
     @Autowired
-    public SpaceWeatherController(KPIndexService kpIndexService) {
+    public KPIndexController(KPIndexService kpIndexService) {
         this.kpIndexService = kpIndexService;
     }
 
@@ -28,6 +28,7 @@ public class SpaceWeatherController {
 
         if (kpIndexOptional.isPresent()) {
             KPIndex kpIndex = kpIndexOptional.get();
+            System.out.println(kpIndex);
             return ResponseEntity.ok(kpIndex.toString());
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
