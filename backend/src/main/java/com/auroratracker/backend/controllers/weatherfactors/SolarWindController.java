@@ -23,17 +23,15 @@ public class SolarWindController {
     }
 
     @GetMapping("/solar-wind")
-    public ResponseEntity<String> getSolarWindData() {
-        Optional<SolarWind> solarWindOptional = solarWindService.fetchLatestSolarWind();
+    public ResponseEntity<SolarWind> getSolarWindData() {
+        SolarWind solarWind = solarWindService.fetchLatestSolarWind();
 
-        if (solarWindOptional.isPresent()) {
-            SolarWind solarWind = solarWindOptional.get();
+        if (solarWind != null) {
             System.out.println("Solar wind Speed: " + solarWind.getSpeed() + " km/s\nDensity " +
                     solarWind.getDensity());
-            return ResponseEntity.ok(solarWind.toString());
+            return ResponseEntity.ok(solarWind);
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Could not retrieve Solar Wind data.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
 }

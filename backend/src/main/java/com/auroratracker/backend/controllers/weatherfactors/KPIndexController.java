@@ -23,16 +23,14 @@ public class KPIndexController {
     }
 
     @GetMapping()
-    public ResponseEntity<String> getKpIndex() {
-        Optional<KPIndex> kpIndexOptional = kpIndexService.fetchLatestKpIndex();
+    public ResponseEntity<KPIndex> getKpIndex() {
+        KPIndex kpIndex= kpIndexService.fetchLatestKpIndex();
 
-        if (kpIndexOptional.isPresent()) {
-            KPIndex kpIndex = kpIndexOptional.get();
+        if (kpIndex != null) {
             System.out.println(kpIndex);
-            return ResponseEntity.ok(kpIndex.toString());
+            return ResponseEntity.ok(kpIndex);
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Could not retrieve KP Index data.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
 }

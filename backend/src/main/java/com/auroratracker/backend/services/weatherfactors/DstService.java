@@ -1,7 +1,9 @@
 package com.auroratracker.backend.services.weatherfactors;
 
 
+import com.auroratracker.backend.common.DateAndTime;
 import com.auroratracker.backend.models.space.weatherfactors.Dst;
+import com.auroratracker.backend.models.space.weatherfactors.IMFData;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -27,20 +29,24 @@ public class DstService {
         this.objectMapper = new ObjectMapper();
     }
 
-    private Optional<String> fetchApiData(){
+
+
+    public Dst fetchLatestDstData() {
         try {
-            return Optional.ofNullable(restTemplate.getForObject(NOAA_API_DST_INDEX_URL, String.class));
+            String jsonResponse = restTemplate.getForObject(NOAA_API_DST_INDEX_URL, String.class);
+
+            JsonNode rootNode = new ObjectMapper().readTree(jsonResponse);
+            JsonNode latestData = rootNode.get(rootNode.size() - 1);
+            double value = latestData.get("dst").asDouble();
+            String timeTag = DateAndTime.getCurrentDateAndTimeFormatted();
+
+            return new Dst(value);
         } catch (Exception e) {
-            logger.error(e.getMessage());
-            return Optional.empty();
+            throw new RuntimeException("Error fetching KP Index data from NOAA API", e);
         }
     }
 
-    public Optional<Dst> fetchLatestDstData() {
-        return fetchApiData()
-                .flatMap(this::parseDstData);
-    }
-
+    /*
     private Optional<Dst> parseDstData(String jsonData) {
         try {
             JsonNode rootNode = objectMapper.readTree(jsonData);
@@ -52,6 +58,8 @@ public class DstService {
             return Optional.empty();
         }
     }
+
+     */
 
 
 }

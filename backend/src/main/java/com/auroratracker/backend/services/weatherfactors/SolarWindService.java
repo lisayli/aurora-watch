@@ -1,6 +1,8 @@
 package com.auroratracker.backend.services.weatherfactors;
 
 
+import com.auroratracker.backend.common.DateAndTime;
+import com.auroratracker.backend.models.space.weatherfactors.KPIndex;
 import com.auroratracker.backend.models.space.weatherfactors.SolarWind;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,20 +29,24 @@ public class SolarWindService {
     }
 
 
-    private Optional<String> fetchApiData() {
+
+
+    public SolarWind fetchLatestSolarWind() {
         try {
-            return Optional.ofNullable(restTemplate.getForObject(NOAA_API_SOLAR_WIND_URL, String.class));
+            String jsonResponse = restTemplate.getForObject(NOAA_API_SOLAR_WIND_URL, String.class);
+
+            JsonNode rootNode = new ObjectMapper().readTree(jsonResponse);
+            JsonNode latestData = rootNode.get(0);
+            double speed = latestData.get("proton_speed").asDouble();
+            double density = latestData.get("proton_density").asDouble();
+            String timeTag = DateAndTime.getCurrentDateAndTimeFormatted();
+
+            return new SolarWind(speed,density);
         } catch (Exception e) {
-            logger.error("Error fetching Solar Wind data from NOAA API", e);
-            return Optional.empty();
+            throw new RuntimeException("Error fetching KP Index data from NOAA API", e);
         }
     }
-
-    public Optional<SolarWind> fetchLatestSolarWind() {
-        return fetchApiData()
-                .flatMap(this::parseSolarWindData);
-    }
-
+/*
     private Optional<SolarWind> parseSolarWindData(String jsonData) {
         try {
             JsonNode rootNode = objectMapper.readTree(jsonData);
@@ -53,4 +59,15 @@ public class SolarWindService {
             return Optional.empty();
         }
     }
+
+    private Optional<String> fetchApiData() {
+        try {
+            return Optional.ofNullable(restTemplate.getForObject(NOAA_API_SOLAR_WIND_URL, String.class));
+        } catch (Exception e) {
+            logger.error("Error fetching Solar Wind data from NOAA API", e);
+            return Optional.empty();
+        }
+    }
+
+ */
 }

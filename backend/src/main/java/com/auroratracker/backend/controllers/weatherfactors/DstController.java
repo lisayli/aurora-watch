@@ -25,16 +25,14 @@ public class DstController {
 
 
     @GetMapping("/dst")
-    public ResponseEntity<String> getDstIndex() {
-        Optional<Dst> dstOptional = dstService.fetchLatestDstData();
+    public ResponseEntity<Dst> getDstIndex() {
+        Dst dst = dstService.fetchLatestDstData();
 
-        if (dstOptional.isPresent()) {
-            Dst dstIndex = dstOptional.get();
-            System.out.println(dstIndex);
-            return ResponseEntity.ok(dstIndex.toString());
+        if (dst != null) {
+            System.out.println(dst);
+            return ResponseEntity.ok(dst);
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Could not retrieve Dst data ");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
     }

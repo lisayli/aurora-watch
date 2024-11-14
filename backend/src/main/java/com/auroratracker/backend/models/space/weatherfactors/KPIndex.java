@@ -5,8 +5,15 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class KPIndex {
+public class KPIndex  {
     private double value;
+    private String timeTag;
+
+    public KPIndex(double value, String timeTag) {
+        this.value = value;
+        this.timeTag = timeTag;
+    }
+     public KPIndex() {}
 
     public KPIndex(double value) {
         this.value = value;
@@ -14,6 +21,9 @@ public class KPIndex {
 
     @Override
     public String toString() {
-        return "Kp-index: " + value;
+        return "Kp-index: " + value + "<br>" + "Date & Time: " + timeTag;
     }
+
+
+
 }

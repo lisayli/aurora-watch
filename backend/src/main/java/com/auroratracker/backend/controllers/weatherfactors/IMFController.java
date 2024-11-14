@@ -24,16 +24,14 @@ public class IMFController {
     }
 
     @GetMapping("/imf")
-    public ResponseEntity<String> getIMFData() {
-        Optional<IMFData> imfDataOptional = imfService.fetchLatestIMFData();
+    public ResponseEntity<IMFData> getIMFData() {
+        IMFData imfData = imfService.fetchLatestIMFData();
 
-        if (imfDataOptional.isPresent()) {
-            IMFData imfData = imfDataOptional.get();
+        if (imfData != null) {
             System.out.println("Bt: " + imfData.getBt() + "\n" + "Bz: " + imfData.getBz());
-            return ResponseEntity.ok(imfData.toString());
+            return ResponseEntity.ok(imfData);
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Could not retrieve IMF data");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
     }

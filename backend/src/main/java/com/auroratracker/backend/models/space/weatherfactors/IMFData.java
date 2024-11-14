@@ -15,6 +15,7 @@ public class IMFData {
         this.bz = bz;
     }
 
+
     @Override
     public String toString() {
         return "ImfData { " + "<br>" + "Bt: " +  bt + "<br>" + "bz: " + bz + "<br>" + "}";
