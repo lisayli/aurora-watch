@@ -1,5 +1,6 @@
 package com.auroratracker.backend.services;
 
+import com.auroratracker.backend.dtos.AuroraDataDTO;
 import com.auroratracker.backend.models.space.weatherfactors.Dst;
 import com.auroratracker.backend.models.space.weatherfactors.IMFData;
 import com.auroratracker.backend.models.space.weatherfactors.KPIndex;
@@ -31,17 +32,26 @@ public class AuroraService {
     }
 
 
-    public String calculateAuroraPrediction() {
+    public AuroraDataDTO calculateAuroraPrediction() {
         KPIndex kpIndex = kpIndexService.fetchLatestKpIndex();
         SolarWind solarWind = solarWindService.fetchLatestSolarWind();
         IMFData imfData = imfService.fetchLatestIMFData();
         Dst dst = dstService.fetchLatestDstData();
 
-        double t = AuroraScoreCalculator.countAuroraScore(kpIndex, solarWind, imfData, dst);
-        String s = AuroraScoreCalculator.analyseAuroraScore(t);
+        double countScore = AuroraScoreCalculator.countAuroraScore(kpIndex, solarWind, imfData, dst);
+        String scoreAnalysis = AuroraScoreCalculator.analyseAuroraScore(countScore);
 
-        System.out.println("Weather Factors Data: { \n" + "Kp-index: " + kpIndex + "\nSolar-wind Speed: " + solarWind + "\nbz (nT): " + imfData + "\nDst: " + dst +  "\n }");
-        return s;
+        AuroraDataDTO result =  new AuroraDataDTO();
+
+        result.setKpIndex(kpIndex.getValue());
+        result.setSolarWindSpeed(solarWind.getSpeed());
+        result.setSolarWindDensity(solarWind.getDensity());
+        result.setImfBz(imfData.getBz());
+        result.setDst(dst.getValue());
+        result.setAnalysis(scoreAnalysis);
+
+        System.out.println("Score: " + countScore);
+        return result;
     }
 
 

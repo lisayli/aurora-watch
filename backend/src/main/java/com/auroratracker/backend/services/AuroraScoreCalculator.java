@@ -16,41 +16,41 @@ public class AuroraScoreCalculator {
 
         if (kpIndex.getValue() >= 5) {
             // hög chans
-            score = 5;
+            score += 5;
         } else if (kpIndex.getValue() >= 3) {
-            score = 3;
+            score += 3;
         } else {
-            score = 1;
+            score += 1;
         }
 
         if (speed.getSpeed() >= 500) {
-            score = 4;
+            score += 4;
         } else if (speed.getSpeed() >= 400) {
-            score = 2;
+            score += 2;
         } else {
-            score = 1;
+            score += 1;
         }
 
         if (imfDataBZ.getBz() <= -10) {
-            score = 5;
+            score += 5;
         } else if (imfDataBZ.getBz() <= -5) {
-            score = 3;
+            score += 3;
         } else {
-            score = 0;
+            score += 0;
         }
 
         if (dst.getValue() <= -50) {
-            score = 4;
+            score += 4;
         } else if (dst.getValue() <= 30) {
-            score = 2;
+            score += 2;
         } else {
-            score = 0;
+            score += 0;
         }
 
         return score;
     }
 
-    public static String analyseAuroraScore(double score) {
+    protected static String analyseAuroraScore(double score) {
         if (score > 12) {
             return "High Chance Of Aurora!";
         } else if (score > 6) {
