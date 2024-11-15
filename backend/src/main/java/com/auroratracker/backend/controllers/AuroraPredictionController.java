@@ -1,5 +1,6 @@
 package com.auroratracker.backend.controllers;
 
+import com.auroratracker.backend.dtos.AuroraDataDTO;
 import com.auroratracker.backend.services.AuroraService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ public class AuroraPredictionController {
     }
 
     @GetMapping
-    public String predictAurora() {
+    public AuroraDataDTO predictAurora() {
         return auroraService.calculateAuroraPrediction();
     }
 }
