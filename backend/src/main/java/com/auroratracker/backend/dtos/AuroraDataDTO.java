@@ -15,6 +15,7 @@ public class AuroraDataDTO {
     private double dst;
     private String analysis;
 
+
     public AuroraDataDTO(double kpIndex, double solarWindSpeed, double solarWindDensity, double imfBz, double dst, String analysis) {
         this.kpIndex = kpIndex;
         this.solarWindSpeed = solarWindSpeed;

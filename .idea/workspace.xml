@@ -5,15 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f349eb-894b-45d7-8473-f634a6e48b11" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/auroratracker/backend/dtos/AuroraDataDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/auroratracker/backend/dtos/AuroraDataDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/8.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/AuroraTrack.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/BackendApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/common/DateAndTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/common/Evaluate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/controllers/AuroraPredictionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/controllers/weatherfactors/DstController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/controllers/weatherfactors/IMFController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/controllers/weatherfactors/KPIndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/controllers/weatherfactors/SolarWindController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/dtos/AuroraDataDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/models/space/weatherfactors/Dst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/models/space/weatherfactors/IMFData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/models/space/weatherfactors/KPIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/models/space/weatherfactors/SolarWind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/services/AuroraScoreCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/services/AuroraService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/services/weatherfactors/DstService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/services/weatherfactors/IMFService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/services/weatherfactors/KPIndexService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/java/com/auroratracker/backend/services/weatherfactors/SolarWindService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/test/java/com/auroratracker/backend/AuroraPredicTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/backend/src/test/java/com/auroratracker/backend/BackendApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/classes/java/main/com/auroratracker/desktop/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/classes/java/main/com/auroratracker/desktop/controller/AuroraDataController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/classes/java/main/com/auroratracker/desktop/model/AuroraData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/classes/java/main/com/auroratracker/desktop/view/AuroraTrackerDesktopApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/tmp/compileJava/compileTransaction/stash-dir/AuroraDataController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/tmp/compileJava/compileTransaction/stash-dir/AuroraTrackerDesktopApp.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/main/java/com/auroratracker/desktop/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/main/java/com/auroratracker/desktop/controller/AuroraDataController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/main/java/com/auroratracker/desktop/model/AuroraData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/src/main/java/com/auroratracker/desktop/view/AuroraTrackerDesktopApp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +117,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/desktop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -96,7 +154,7 @@
   "keyToString": {
     "Application.DateTimeFormat.executor": "Debug",
     "Gradle.desktop [:com.auroratracker.desktop.Main.main()].executor": "Debug",
-    "Gradle.desktop [:com.auroratracker.desktop.view.AuroraTrackerDesktopApp.main()].executor": "Run",
+    "Gradle.desktop [:com.auroratracker.desktop.view.AuroraTrackerDesktopApp.main()].executor": "Debug",
     "JUnit.AuroraPredicTest.highChanceOfAuroraShould_KPIndex.executor": "Run",
     "JUnit.AuroraPredicTest.kpShouldBeAtLeast3ToBeAuroraLights.executor": "Run",
     "JUnit.AuroraPredicTest.testAuroraPredictionWithHighResult.executor": "Run",
@@ -110,8 +168,8 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.BackendApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "Spring Boot.BackendApplication.executor": "Debug",
+    "git-widget-placeholder": "aurora-with-score-logic",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/projects/dev/test/aurora-watch",
@@ -166,7 +224,7 @@
       </method>
     </configuration>
     <configuration name="AuroraPredicTest.highChanceOfAuroraShould_KPIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auroratrack-backend" />
+      <module name="backend" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.auroratracker.backend.*" />
@@ -182,7 +240,7 @@
       </method>
     </configuration>
     <configuration name="AuroraPredicTest.testAuroraPredictionWithHighResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auroratrack-backend" />
+      <module name="backend" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.auroratracker.backend.*" />
@@ -198,7 +256,7 @@
       </method>
     </configuration>
     <configuration name="BackendApplicationTests.testMiddleChanceOfAuroraShouldReturnScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="auroratrack-backend" />
+      <module name="backend" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.auroratracker.backend.*" />
@@ -214,7 +272,7 @@
       </method>
     </configuration>
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="auroratrack-backend" />
+      <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.auroratracker.backend.BackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,7 +321,9 @@
       <workItem from="1731601413737" duration="309000" />
       <workItem from="1731601733254" duration="5108000" />
       <workItem from="1731662811402" duration="4444000" />
-      <workItem from="1731671696658" duration="14056000" />
+      <workItem from="1731671696658" duration="15928000" />
+      <workItem from="1731932599314" duration="1822000" />
+      <workItem from="1732002400478" duration="1173000" />
     </task>
     <task id="LOCAL−00001" summary="Initial commit">
       <option name="closed" value="true" />
