@@ -13,18 +13,13 @@ public class AuroraDataDTO {
     private double solarWindDensity;
     private double imfBz;
     private double dst;
-    private String analysis;
 
-
-    public AuroraDataDTO(double kpIndex, double solarWindSpeed, double solarWindDensity, double imfBz, double dst, String analysis) {
+    public AuroraDataDTO(double kpIndex, double solarWindSpeed, double solarWindDensity, double imfBz, double dst) {
         this.kpIndex = kpIndex;
         this.solarWindSpeed = solarWindSpeed;
         this.solarWindDensity = solarWindDensity;
         this.imfBz = imfBz;
         this.dst = dst;
-        this.analysis = analysis;
     }
-
-    public AuroraDataDTO() {}
 
 }

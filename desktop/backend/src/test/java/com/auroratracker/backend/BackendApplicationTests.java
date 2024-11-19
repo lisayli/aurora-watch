@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class BackendApplicationTests {
 
 
-/*
+
 
     @Test
     void testHighChanceOfAuroraShouldReturnScore5() {
@@ -32,7 +32,5 @@ class BackendApplicationTests {
 
   //      assertEquals(expectedScore, actualScore, "Score should be 3 for KpIndex >= 3");
     }
-
- */
 
 }
