@@ -1,6 +1,7 @@
 package com.auroratracker.backend.services;
 
 import com.auroratracker.backend.dtos.AuroraDataDTO;
+
 import com.auroratracker.backend.models.space.weatherfactors.Dst;
 import com.auroratracker.backend.models.space.weatherfactors.IMFData;
 import com.auroratracker.backend.models.space.weatherfactors.KPIndex;
@@ -51,10 +52,9 @@ public class AuroraService {
         result.setAnalysis(scoreAnalysis);
 
         System.out.println("Score: " + countScore);
+     
         return result;
     }
-
-
 
 
 }
